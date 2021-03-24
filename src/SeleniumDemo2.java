@@ -20,7 +20,6 @@ public class SeleniumDemo2 {
         WebDriverManager.operadriver().setup();
         WebDriver driver = new OperaDriver(); // upcasting
 
-
         // 2. Maximize the browser
         driver.manage().window().maximize();
 
