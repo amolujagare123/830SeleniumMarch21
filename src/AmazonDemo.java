@@ -1,10 +1,9 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ForgotPass {
+public class AmazonDemo {
 
     public static void main(String[] args) {
 
@@ -13,11 +12,10 @@ public class ForgotPass {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        driver.get("http://stock.scriptinglogic.net/");
+        driver.get("https://www.amazon.in/s?k=amarendra+chitale&ref=nb_sb_noss");
 
-        driver.findElement(By.xpath("//a[text()='Forgot your password?']")).click();
+        driver.findElement(By.xpath("//img[contains(@alt,'NLP')]")).click();
 
-        driver.findElement(By.xpath("//a[contains(text(),'Forgot')]")).click();
 
 
 
