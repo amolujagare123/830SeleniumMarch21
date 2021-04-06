@@ -1,27 +1,31 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LoginJunit {
+public class LoginJunit2 {
 
-    WebDriver driver;
+    static WebDriver driver;
 
-    @Before // method with this annotation (@Before) will run before every test method
-    public void openBrowser() {
+    @BeforeClass // (1) Method with this annotation (@BeforeClass) will run before first test method of the class
+    public static void openBrowser() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-
         driver.manage().window().maximize();
     }
 
 
-    @After // method with this annotation (@After) will run after every test method
-    public void closeBrowser() throws InterruptedException {
+  /*  @Before // (2)
+    public  void testBefore()
+    {
+        driver.get("http://facebook.com");
+    }*/
+
+
+    @AfterClass // Method with this annotation (@AfterClass) will run after last test method of the class
+    public static void closeBrowser() throws InterruptedException {
        Thread.sleep(4000);
         driver.close();
     }
