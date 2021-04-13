@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="xyz">
+
+    <groups>
+        <run>
+            <exclude name="email"/>
+        </run>
+    </groups>
+
+
+    <test name="module 1">
+        <classes>
+
+            <class name ="TestNGDemos.Demos.ClassOne">
+             <!--  <methods>
+                   <include name="ClassOneTest3"/>
+                   <include name="ClassOneTest2"/>
+               </methods>-->
+            </class>
+
+            <class name ="TestNGDemos.Demos.ClassTwo"/>
+        </classes>
+    </test>
+
+    <test name="module 2">
+        <classes>
+            <class name = "TestNGDemos.Demos.ClassThree"/>
+        </classes>
+    </test>
+
+</suite>
