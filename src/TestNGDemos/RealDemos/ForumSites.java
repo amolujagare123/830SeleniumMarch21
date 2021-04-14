@@ -3,6 +3,7 @@ package TestNGDemos.RealDemos;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -27,6 +28,9 @@ public class ForumSites {
     public void stackoverflow()
     {
         driver.get("https://stackoverflow.com");
+
+        Assert.assertEquals(true,false,"this site is wrong");
+
     }
 
     @Test
