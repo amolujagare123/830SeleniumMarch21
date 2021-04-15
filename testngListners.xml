@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="xyz">
+
+    <listeners>
+        <listener class-name="ExtentReportDemos.util.MyListners"/>
+    </listeners>
+
+    <test name="module 1">
+
+        <classes>
+
+            <class name ="TestNGDemos.Demos.ClassOne"/>
+
+            <class name ="TestNGDemos.Demos.ClassTwo"/>
+        </classes>
+    </test>
+
+    <test name="module 2">
+        <classes>
+            <class name = "TestNGDemos.Demos.ClassThree"/>
+        </classes>
+    </test>
+
+</suite>
