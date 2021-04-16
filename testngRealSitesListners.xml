@@ -1,0 +1,21 @@
+<suite name="All websites project">
+
+
+    <listeners>
+        <listener class-name="ExtentReportDemos.util.MyExtentListners"/>
+    </listeners>
+
+    <test name ="social,forum">
+        <classes>
+            <class name ="TestNGDemos.RealDemos.SocialSites"/>
+            <class name ="TestNGDemos.RealDemos.ForumSites"/>
+        </classes>
+    </test>
+
+    <test name ="Tutorials">
+        <classes>
+            <class name ="TestNGDemos.RealDemos.TutorialsSites"/>
+        </classes>
+    </test>
+
+</suite>

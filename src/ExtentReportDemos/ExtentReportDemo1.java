@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-import static ExtentReportDemos.util.ForScreenshots.takingscreenshot;
+import static ExtentReportDemos.util.ForExtentReports.takingscreenshot;
 
 public class ExtentReportDemo1 {
 
