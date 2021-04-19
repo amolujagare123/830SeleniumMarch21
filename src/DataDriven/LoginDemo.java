@@ -46,8 +46,8 @@ public class LoginDemo {
            data[1][0] ="wewewe";
            data[1][1] ="uyuyu";
 
-           data[2][0] =" ";
-           data[2][1] =" ";
+           data[2][0] ="";
+           data[2][1] ="";
 
            return  data;
        }
